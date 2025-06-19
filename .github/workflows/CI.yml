@@ -10,8 +10,10 @@ jobs:
     run-on: ubuntu-latest
 
     steps:
-      - name: Checkout SCM
-        uses: actions/checkout@v4
+    - name: "Checkout SCM"
+      uses: actions/checkout@v4
+      with:
+        repository: aidynilyas/actions-feb-cicd
 
-      - name: Test
-        uses: ls
+    - name: Test
+      uses: ls
