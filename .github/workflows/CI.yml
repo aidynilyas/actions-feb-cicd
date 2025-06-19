@@ -7,13 +7,11 @@ on:
 
 jobs:
   builds:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: "Checkout SCM"
       uses: actions/checkout@v4
-      with:
-        repository: aidynilyas/actions-feb-cicd
 
     - name: Test
       uses: ls
